@@ -200,18 +200,6 @@ function BackwardPassPrimal(msro,N_ITER,start,stop)
     end
 end
 
-function stage_with_max_gap(intraday::Array{JuMP.Model},intradayMax::Array{JuMP.Model})
-    # LsqFit.@. msro(x, p) = p[1]*exp(-(x-1)*p[2])
-    # xdata = 1:(length(intraday)-3)
-    # ydata = [(objective_value(intradayMax[t]) - objective_value(intraday[t]))/objective_value(intradayMax[t]) for t in xdata]
-    # p0 = [ydata[1],2]
-    # fit = LsqFit.curve_fit(msro, xdata, ydata, p0)
-    # ydata_fitted = msro(xdata,fit.param)
-    # normalized = ydata./ydata_fitted
-    # ~,start = findmin(normalized)
-    # start = randperm(T)[1]
-    return 1
-end
 
 function mature_stage(msro,additional)
     if minimum(additional[:gaphourly][1:end-1]) < 0.01 && maximum(additional[:gaphourly][1:end-1]) < 0.2 
