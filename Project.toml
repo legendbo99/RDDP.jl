@@ -1,6 +1,6 @@
 name = "RDDP"
 uuid = "2f046eea-e9a0-482c-8c12-e34140017081"
-authors = ["zidanessf <zidane765@hotmail.com>"]
+authors = ["Yunhui Shi <zidane765@hotmail.com>"]
 version = "0.1.0"
 
 [deps]
