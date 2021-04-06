@@ -26,3 +26,25 @@ msro = RDDP.buildMultiStageRobustModel(
 end
 RDDP.train(msro)
 ```
+## Citing RDDP.jl
+If you use RDDP.jl, we ask that you please cite the following:
+```
+@article{rddp.jl,
+  title={Enhancing the Flexibility of Storage Integrated Power System by Multi-stage Robust Dispatch},
+  author={Shi, Yunhui and Guo, Chuangxin and Dong, Shufeng and Chen, Zhe and Wang, Luyu},
+  journal={IEEE Transactions on Power Systems},
+  year={2020},
+  publisher={IEEE}
+}
+
+@article{georghiou2019robust,
+  title={Robust dual dynamic programming},
+  author={Georghiou, Angelos and Tsoukalas, Angelos and Wiesemann, Wolfram},
+  journal={Operations Research},
+  volume={67},
+  number={3},
+  pages={813--830},
+  year={2019},
+  publisher={INFORMS}
+}
+```
