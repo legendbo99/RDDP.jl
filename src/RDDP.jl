@@ -11,7 +11,6 @@ import Ipopt
 import LinearAlgebra
 import Printf
 import Random
-import NLsolve
 import Polyhedra
 import CDDLib
 import DataFrames
