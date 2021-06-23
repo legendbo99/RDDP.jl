@@ -31,7 +31,7 @@ function add_lower_bound(msro,t)
     lower_cut = AffExpr()
     for i in 1:length(msro.lower[t][:state])
         p = dual(FixRef(msro.lower[t+1][:state][i].in))
-        msro.lower[t][:penalty] = max(msro.lower[t][:penalty],1.01*abs(p))#dynamic method
+        msro.lower[t][:penalty] = max(msro.lower[t][:penalty],1.01*abs(p))#dynamic method #这里为什么
         add_to_expression!(lower_cut,p * (msro.lower[t][:state][i].out - value(msro.lower[t+1][:state][i].in)))
     end
     v_lower = objective_value(msro.lower[t+1])
